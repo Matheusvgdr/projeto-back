@@ -1,4 +1,4 @@
-package com.projetos.backapploja.model;
+package com.projetos.backapploja.model.log;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -10,29 +10,18 @@ import java.time.Instant;
 @Getter
 @Setter
 @Entity
-@Table(name = "\"TB508_LOG_MOVIMENTACAO\"")
-public class LogMovimentacaoModel {
+@Table(name = "\"TB507_LOG_PRODUTO_GRUPO\"")
+public class LogProdutoGrupoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "\"NU_LOG_MOVIMENTACAO\"", nullable = false)
-    private Long nuLogMovimentacao
-            ;
-
-    @NotNull
-    @Column(name = "\"NU_MOVIMENTACA\"", nullable = false)
-    private Long nuMovimentaca;
-
-    @Column(name = "\"TP_PAGAMENTO\"")
-    private Short tpPagamento;
+    @Column(name = "\"NU_LOG_PRODUTO_GRUPO\"", nullable = false)
+    private Long nuLogProdutoGrupo;
 
     @Column(name = "\"NU_PRODUTO\"")
     private Long nuProduto;
 
     @Column(name = "\"NU_GRUPO\"")
     private Long nuGrupo;
-
-    @Column(name = "\"DH_EVENTO\"")
-    private Instant dhEvento;
 
     @NotNull
     @Column(name = "\"DH_OPERACAO\"", nullable = false)

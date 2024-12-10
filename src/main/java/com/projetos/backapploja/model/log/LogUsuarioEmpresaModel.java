@@ -1,4 +1,4 @@
-package com.projetos.backapploja.model;
+package com.projetos.backapploja.model.log;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
